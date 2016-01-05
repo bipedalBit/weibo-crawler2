@@ -11,7 +11,7 @@
 
 ### Depends
 &nbsp;&nbsp;&nbsp; This package have only several dependent packages.
-&nbsp;&nbsp;&nbsp; You can install them by following commands under Ubuntu:
+&nbsp;&nbsp;&nbsp; You can install them by following commands under Ubuntu:<br>
 &nbsp;&nbsp;&nbsp; `sudo apt-get install Python-bs4`<br>
 &nbsp;&nbsp;&nbsp; `sudo apt-get install Python-lxml`<br>
 &nbsp;&nbsp;&nbsp; `sudo apt-get install Python-requests`<br>
