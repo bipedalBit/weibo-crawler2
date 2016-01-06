@@ -142,7 +142,7 @@ def wap_weibo_parser(url, host, data):
 		wap_weibo_data_parser(data_list, weibo_soup, client_info_soup)
 		# 添加目标用户的微博ID和主页链接
 		data_list[-1]['weibo_user'] = weibo_user
-		data_list[-1]['weibo_user_url'] = url
+		data_list[-1]['weibo_user_url'] = re.search(r'http://.+?/\w+', url).group(0)
 	if next_page_link is not None: next_page_link = 'http://' + host + next_page_link + '/'
 	page_result = {
 		'data_list': data_list,
