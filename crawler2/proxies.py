@@ -183,7 +183,8 @@ def daemon_pool(test_url, timeout, interval):
 if __name__ == '__main__':
 	daemon_pool(test_url='http://weibo.cn/moegirlwiki', timeout=3, interval=30)
 	for i in xrange(5):
-		for proxy in proxy_pool:
-			print proxy
 		print '='*10, '当前代理池（包括不使用代理，即None）', '='*10
+		for proxy in proxy_pool.keys():
+			print proxy
+		print '='*30
 		sleep(30)
