@@ -45,11 +45,9 @@ def get_proxies(test_url, timeout):
 	'''
 
 	src_url = 'http://www.xicidaili.com/nn'
-	# 尝试获取西刺代理首页数据直到成功
+	# 获取西刺代理首页数据
 	global headers
 	response = requests.get(src_url, headers=headers)
-	while response.status_code != 200:
-		response = requests.get(src_url)
 	# 解析网页
 	soup = get_soup(response.text)
 	tag_list = soup.find_all('tr')[1:]
